@@ -150,17 +150,8 @@ main{
    margin-top: 30px;
 }
 
-.link-button-green {
-   height: 40px;
-   width: 120px;
-   border-radius: 6px;
-   background-color: #088A06;
-   color: white;
-   border: none;
-   cursor: pointer;
-}
 
-.link-button-white {
+.button {
    height: 40px;
    width: 120px;
    border-radius: 6px;
@@ -171,17 +162,98 @@ main{
    cursor: pointer;
 }
 
-.about-section-buttons a {
+.button-green {
+   height: 40px;
+   width: 120px;
+   border-radius: 6px;
+   background-color: #088A06;
+   color: white;
+   margin-left: 30px;
+   cursor: pointer;
+}
+
+
+
+.button a {
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 6px;
 }
 
-.about-section-buttons i {
+.button i {
    display: flex;
    align-items: center;
 }
+
+
+/* -- 2% donation section --*/
+
+.donation-section{
+   display: flex;
+   background-color: #088A06;
+   height: 248px;
+   border-radius: 8px;
+   margin-top: 50px;
+}
+
+.donation-section-text{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-evenly;
+   margin: 20px auto 20px 60px;
+   color: white;
+}
+
+.donation-section-button{
+   height: 40px;
+   width: 120px;
+   border-radius: 6px;
+   background-color: white;
+   color: #088A06;
+   border: none;
+   cursor: pointer;
+   margin-left: 0px;
+}
+
+.donation-section-image{
+   display: flex;
+   height: 100%;
+   width: 40%;
+}
+
+/* -- sponsors section -- */
+
+.sponsors-section{
+   display: flex;
+   justify-content: center;
+   height: 400px;
+   margin-top: 200px;
+   margin-bottom: 80px;
+}
+
+.sponsors-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+}
+
+.sponsors-row{
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: row;
+   gap: 40px;
+}
+
+.sponsors-row img{
+   height: 60px;
+}
+
+
+
+/* -- footer -- */
 
 
 footer{
@@ -205,6 +277,8 @@ footer h3{
 .footer-pages{
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   height: 248px;
 }
 
 .footer-pages a{
@@ -213,13 +287,30 @@ footer h3{
 
 
 .footer-webcredits{
-
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 248px;
 }
 
 .footer-links{
    display: flex;
    flex-direction: column;
+   justify-content: center;
    gap: 20px;
+   height: 248px;
+}
+
+.footer-links a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 6px;
+   font-size: 14px;
+}
+
+.footer-links i{
+   font-size: 15px;
 }
 
 .footer-facebook-button{
