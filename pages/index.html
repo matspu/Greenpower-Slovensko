@@ -85,28 +85,37 @@
             </div>
             <div class="contact-form">
                <form>
-                  <div>
-                     <label for="fname">Meno</label>
-                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                     
-                     <label for="lname">Priezvisko</label>
-                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <div style="display:flex; flex-direction: row;">
+                     <div class="contact-form-row">
+                        <label for="fname">Meno</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                     </div>
+
+                     <div class="contact-form-row">
+                        <label for="lname">Priezvisko</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                     </div>
                   </div>
 
-                  <div>
-                     <label for="lname">Tel. číslo</label>
-                     <input type="text" id="lname" name="email" placeholder="tel číslo">
-                     
-                     <label for="lname">Email</label>
-                     <input type="email" id="lname" name="email" placeholder="email@email.sk">
+                  <div style="display:flex; flex-direction: row;">
+                     <div class="contact-form-row">
+                        <label for="lname">Tel. číslo</label>
+                        <input type="text" id="lname" name="email" placeholder="tel číslo">
+                     </div>
+   
+                     <div class="contact-form-row">
+                        <label for="lname">Email</label>
+                        <input type="email" id="lname" name="email" placeholder="email@email.sk">
+                     </div>
+   
                   </div>
 
                
                
-                  <label for="subject">Správa</label>
-                  <textarea id="subject" name="subject" placeholder="Sem napíšte obsah vašej správy" style="height:200px"></textarea>
+                  <label for="subject" style="color:#088A06; ">Správa</label>
+                  <textarea id="subject" name="subject" placeholder="Sem napíšte obsah vašej správy"></textarea>
                
-                  <input type="submit" value="Odoslať" class="button-green button">
+                  <input type="submit" value="Odoslať" class="button-green button" style="color:white;">
                </form>
             </div>
          </section>
