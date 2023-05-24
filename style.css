@@ -42,6 +42,7 @@ nav a {
    color: white;
    font-size: 16px;
    cursor: pointer;
+   text-decoration: none;
 }
 
 .nav-button {
@@ -184,6 +185,17 @@ main{
    align-items: center;
 }
 
+
+/* -- video section --*/
+
+.video-section{
+   margin-bottom: 150px;
+}
+
+.video-section video{
+   width: 100%;
+}
+
 /* -- contact section -- */
 
 .contact-section{
@@ -241,7 +253,7 @@ main{
    width: 300px; 
    outline: none;
    border: none;
-   border-bottom: 1px solid gray;
+   border-bottom: 1px solid rgba(112, 128, 144, 0.438);
    color: #088A06;
    font-size: 16px;
    margin-right: 40px;
