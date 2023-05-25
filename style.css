@@ -35,15 +35,18 @@ nav {
 .nav-logo {
    width: 264px;
    margin-right: auto;
+   cursor: pointer;
 }
 
-nav a {
+nav a{
    margin-left: 30px;
    color: white;
    font-size: 16px;
    cursor: pointer;
    text-decoration: none;
 }
+
+
 
 .nav-button {
    height: 40px;
