@@ -385,16 +385,16 @@ footer h3{
 .footer-webcredits{
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   height: 248px;
+   justify-content: flex-start;
+   height: 170px;
 }
 
 .footer-links{
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    gap: 20px;
-   height: 248px;
+   height: 170px;
 }
 
 .footer-links a{
