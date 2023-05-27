@@ -178,13 +178,12 @@ footer h3 {
    cursor: pointer;
 }
 
-
-.footer-webcredits {
+.footer-credits{
    display: flex;
    flex-direction: column;
-   justify-content: flex-start;
-   height: 170px;
+   justify-content: center;
+   height: 248px;
+   width: 40%;
 }
-
 
 
