@@ -7,6 +7,11 @@
    box-sizing: border-box;
 }
 
+html{
+   scroll-behavior: smooth;
+   scroll-padding: 200px;
+}
+
 body{
    font-family: 'Poppins', sans-serif;
 }
@@ -113,7 +118,6 @@ header{
 
 main{
    width: 80%;
-   border: 1px solid lightcoral;
    margin: 0px auto;
 }
 
@@ -212,7 +216,7 @@ main{
 .contact-information{
    display: flex;
    flex-direction: column;
-   width: 30%;
+   width: 32%;
    padding: 40px;
    background-color: #088A06;
    color: white;
@@ -288,12 +292,13 @@ main{
 
 /* -- 2% donation section --*/
 
-.donation-section{
+#donation-section{
    display: flex;
    background-color: #088A06;
    height: 248px;
    border-radius: 8px;
    margin-top: 150px;
+   scroll-padding: 100px;
 }
 
 .donation-section-text{
