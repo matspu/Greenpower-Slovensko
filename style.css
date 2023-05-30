@@ -411,6 +411,10 @@ footer h3{
    justify-content: center;
    gap: 6px;
    font-size: 14px;
+   width: 100%;
+   line-height: 37px;
+   text-decoration: none;
+   color: inherit;
 }
 
 .footer-links i{
@@ -420,19 +424,19 @@ footer h3{
 .footer-facebook-button{
    background-color: white;
    border: none;
-   padding: 8px 60px;
    color: #4267B2;
    border-radius: 6px;
    cursor: pointer;
+   width: 200px;
 }
 
 .footer-instagram-button{
    background-color: white;
    border: none;
-   padding: 8px 60px;
    color: #B41B84;
    border-radius: 6px;
    cursor: pointer;
+   width: 200px;
 }
 
  .fa-instagram {
