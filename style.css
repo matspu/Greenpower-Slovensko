@@ -27,7 +27,7 @@ img{
 
 nav {
    position: absolute;
-   z-index: 1;
+   z-index: 2;
    top: 0;
    width: 80%;
    display: flex;
@@ -52,7 +52,6 @@ nav a{
 }
 
 
-
 .nav-button {
    height: 40px;
    width: 120px;
@@ -69,6 +68,38 @@ nav a{
    line-height: 40px;
    margin: 0px;
 }
+
+.nav-hamburger{
+   cursor: pointer;
+   display: none;
+}
+
+.nav-hamburger div{
+   height: 3px;
+   width: 30px;
+   background: #fefefe;
+   margin: 5px;
+   transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+   transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+   transition: all 0.7s ease;
+   width: 0px;
+}
+
+.toggle .line3 {
+   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-toggle{
+   display: none;
+}
+
+
 
 header{
    position: relative;
@@ -468,4 +499,52 @@ footer h3{
    height: 200px;
    width: 200px;
    border: 1px solid gray;
+}
+
+@media (max-width: 780px){
+   nav a {
+      display: none;
+   }
+
+   nav button{
+      display: none;
+   }
+
+   .nav-hamburger{
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      right: 3%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+   }
+
+   .nav-toggle {
+      display: block;
+      position: fixed;
+      background: #131418;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+   }
+   
+   .nav-toggle.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+   }
+   
+
+
+}
+
+@media(max-width: 920px){
+   nav {
+      width: 95%;
+   }
 }
