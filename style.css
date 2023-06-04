@@ -246,7 +246,6 @@ main{
 
 .contact-section{
    display: flex;
-   flex-wrap: wrap;
    height: auto;
    border-radius: 25px;
    padding: 40px;
@@ -256,7 +255,7 @@ main{
 .contact-information{
    display: flex;
    flex-direction: column;
-   width: 32%;
+   width: 400px;
    max-height: 100%;
    padding: 40px;
    background-color: #088A06;
@@ -282,7 +281,7 @@ main{
 
 .contact-form{
    display: flex;
-   padding: 30px 40px 0px 40px;
+   padding: 30px 0px 0px 40px;
    margin-left: 30px;
 }
 
@@ -518,9 +517,18 @@ footer h3{
    height: 200px;
    width: 200px;
    border: 1px solid gray;
+   border-radius: 12px;
 }
 
+
+
+
+
 @media (max-width: 600px) {
+   main {
+      width: 100%;
+   }
+
    .header-title{
       font-size: 64px;
    }
@@ -575,19 +583,30 @@ footer h3{
 }
 
 @media(max-width: 920px){
+   .contact-section {
+      flex-direction: column;
+   }
+
+   .contact-information{
+      width: 100%;
+   }
 
    footer{
       flex-direction: column;
       align-items: flex-start;
    }
-
 }
 
 
 @media(max-width: 1050px){
+
+   .about-section{
+      align-items: center;
+   }
+
    .about-section-container{
+      width: 80%;
       flex-wrap: wrap;
-      justify-content: center;
    }
 
    .about-section-container:nth-of-type(1){
@@ -601,11 +620,21 @@ footer h3{
    .about-section-text{
       width: 100%;
    }
+
+   .about-section-container img{
+      width: 100%;
+   }
 }
 
 
 @media (max-width: 1300px){
+
+   .contact-form {
+      padding-right: 0px;
+   }
+
    .contact-form-row{
       flex-direction: column;
    }
+
 }
