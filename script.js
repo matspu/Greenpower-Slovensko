@@ -1,8 +1,10 @@
 window.addEventListener("scroll", e => {
    if (window.scrollY > 50) {
-      document.querySelector("nav").style.backgroundColor = "rgba(255, 255, 255, 0.322)";
+      document.querySelector("nav").style.backgroundColor = "rgba(128, 128, 128, 0.300)";
+      document.querySelector("nav").style.backdropFilter = "blur(5px)";
    } else {
       document.querySelector("nav").style.backgroundColor = "transparent";
+      document.querySelector("nav").style.backdropFilter = "none";
    }
 });
 

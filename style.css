@@ -211,12 +211,17 @@ main{
    cursor: pointer;
 }
 
+.button-green a{
+   color: white;
+}
+
 
 .button a {
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 6px;
+   text-decoration: none;
 }
 
 .button i {
@@ -598,6 +603,8 @@ footer h3{
 }
 
 
+
+
 @media(max-width: 1050px){
 
    .about-section{
@@ -624,6 +631,7 @@ footer h3{
    .about-section-container img{
       width: 100%;
    }
+
 }
 
 
