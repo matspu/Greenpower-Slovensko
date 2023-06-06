@@ -255,10 +255,6 @@ main{
    cursor: pointer;
 }
 
-.video-section video:hover + .video-section-overlay{
-   opacity: 0;
-}
-
 .video-section-overlay{
    display: flex;
    align-items: end;
