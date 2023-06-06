@@ -252,6 +252,11 @@ main{
    outline: none;
    height: 700px;
    border-radius: 25px;
+   cursor: pointer;
+}
+
+.video-section video:hover + .video-section-overlay{
+   opacity: 0;
 }
 
 .video-section-overlay{
@@ -268,7 +273,7 @@ main{
    border-radius: 25px;
    pointer-events: none;
    padding: 60px 40px;
-   text-align: left end;
+   transition: all 0.3s ease;
 }
 
 .video-section-overlay p{
