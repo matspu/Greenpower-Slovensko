@@ -286,7 +286,7 @@ main{
 
 /* -- contact section -- */
 
-.contact-section{
+#contact-section{
    display: flex;
    height: auto;
    border-radius: 25px;
@@ -662,7 +662,7 @@ footer h3{
 }
 
 @media(max-width: 920px){
-   .contact-section {
+   #contact-section {
       flex-direction: column;
    }
 
