@@ -176,6 +176,8 @@ main{
    filter: brightness(90%);
 }
 
+
+
 /* -- images section -- */
 
 .images-section{
@@ -190,18 +192,52 @@ main{
    gap: 20px;
 }
 
+.image-overflow::before{
+   content: "";
+   position: absolute;
+   inset: 0;
+   animation: pulse 2.5s infinite;
+}
+
+.image-overflow.loaded::before{
+   content: none;
+   animation: none;
+}
+
+@keyframes pulse{
+   0%{
+      background-color: rgba(255, 255, 255, 0);
+   }
+   50%{
+      background-color: rgba(255, 255, 255, 0.1);
+   }
+   100%{
+      background-color: rgba(255, 255, 255, 0);
+   }
+}
+
 .image-overflow{
+   position: relative;
    overflow: hidden;
    border-radius: 5px;
    height: 300px;
    width: 420px;
+   background-size: cover;
+   background-position: center;
 }
 
-.images-container img{
-   height: 100%;
-   width: 100%;
+.image-overflow.loaded > img{
+   opacity: 1;
+}
+
+.image-overflow > img{
+   height: 300px;
+   width: 420px;
    border-radius: 5px;
-   transition: transform 0.2s ease;
+   transition: transform 0.2s ease, opacity 0.2s ease;
+   object-position: center;
+   object-fit: cover;
+   opacity: 0;
 }
 
 .images-container::after {
