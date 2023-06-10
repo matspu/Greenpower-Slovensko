@@ -324,14 +324,12 @@ main{
 
 .contact-form{
    display: flex;
+   flex-direction: column;
    width: 100%;
    padding: 30px 40px 0px 40px;
    margin-left: 40px;
 }
 
-.contact-form form{
-   width: 100%;
-}
 
 .contact-form-row{
    display: flex;
@@ -678,6 +676,15 @@ footer h3{
       width: 100%;
    }
 
+   .contact-form{
+      margin-right: 40px;
+      width: auto;
+   }
+
+   .contact-form-column {
+      width: 70%;
+   }
+
    footer{
       flex-direction: column;
       align-items: flex-start;
@@ -714,18 +721,29 @@ footer h3{
       width: 100%;
    }
 
+   .contact-form{
+      padding-inline: 0px;
+   }
+
 
 }
 
 
-@media (max-width: 1300px){
+@media (min-width: 920px) and (max-width: 1300px){
 
    .contact-form-column{
-      width: 80%;
+      width: 100%;
    }
 
    .contact-form-row{
       flex-direction: column;
    }
 
+}
+
+
+@media (min-width: 1300px) and (max-width: 1555px){
+   .contact-form-column{
+      width: 60%;
+   }
 }
