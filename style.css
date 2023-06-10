@@ -489,6 +489,9 @@ footer h3{
 
 .footer-pages a{
    cursor: pointer;
+   color: white;
+   text-decoration: none;
+   margin-bottom: 6px;
 }
 
 
