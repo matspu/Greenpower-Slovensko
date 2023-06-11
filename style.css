@@ -454,6 +454,8 @@ main{
 
 .sponsors-row img{
    height: 60px;
+   width: 240px;
+   object-fit: contain;
 }
 
 
