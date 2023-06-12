@@ -91,7 +91,7 @@
 
          <section class="video-section">
             <video>
-               <source src="/videos/video-2022.mp4" type="video/mp4">
+               <source src="videos/video-2022.mp4" type="video/mp4">
             </video>
             <div class="video-section-overlay">
                <p>Video overlay</p>
@@ -109,32 +109,40 @@
             <form class="contact-form">
                <div class="contact-form-row">
                   <div class="contact-form-column">
-                     <label for="fname">Meno</label>
-                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                     <input type="text" name="fname" required autocomplete="off"/>
+                     <label for="fname" class="label-name">
+                        <span class="content-name">Meno</span>
+                     </label>
                   </div>
 
                   <div class="contact-form-column" style="margin-right: 0px;">
-                     <label for="lname">Priezvisko</label>
-                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                     <input type="text" name="sname" required autocomplete="off"/>
+                     <label for="sname" class="label-name">
+                        <span class="content-name">Priezvisko</span>
+                     </label>
                   </div>
                </div>
 
                <div class="contact-form-row">
                   <div class="contact-form-column">
-                     <label for="lname">Tel. číslo</label>
-                     <input type="text" id="lname" name="email" placeholder="tel číslo">
+                     <input type="text" name="phone" required autocomplete="off"/>
+                     <label for="phone" class="label-name">
+                        <span class="content-name">Tel. číslo</span>
+                     </label>
                   </div>
    
                   <div class="contact-form-column" style="margin-right: 0px;">
-                     <label for="lname">Email</label>
-                     <input type="email" id="lname" name="email" placeholder="email@email.sk">
+                     <input type="text" name="email" required autocomplete="off"/>
+                     <label for="email" class="label-name">
+                        <span class="content-name">Email</span>
+                     </label>
                   </div>
    
                </div>
 
                
                
-               <label for="subject" style="color:#088A06; ">Správa</label>
+               <p for="subject" style="color:#088A06; font-size: 14px;">Správa</p>
                <textarea id="subject" name="subject" placeholder="Sem napíšte obsah vašej správy"></textarea>
                
                <button class="button-green button"><a>Odoslať<i class="bi bi-send"></i></a></button>
@@ -158,19 +166,20 @@
                <h3 class="about-section-title">Naši sponzori</h3>
                <div class="sponsors-row">
                   <img src="images/sponsors/dpd.png">
+                  <img src="images/sponsors/WhatsApp Image 2022-06-08 at 22.48.13.jpeg">
                   <img src="images/sponsors/greenway.jpg">
                   <img src="images/sponsors/MôjEelektromobil.png">
                   <img src="images/sponsors/SCS.png">
                   <img src="images/sponsors/NOW.png">
-                  <img src="images/sponsors/WhatsApp Image 2022-06-08 at 22.48.13.jpeg">
+                  
                </div>
                <div class="sponsors-row">
                   <img src="images/sponsors/prosent blue.png">
                   <img src="images/sponsors/Nadácia Volkswagen Slovakia.png">
                   <img src="images/sponsors/siemens.png">
                   <img src="images/sponsors/STU SjF.png">
-                  <img src="images/sponsors/Volkswagen Slovakia.png">
                   <img src="images/sponsors/voltia.png">
+                  <img src="images/sponsors/Volkswagen Slovakia.png">
                </div>
             </div>
          </section>

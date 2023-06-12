@@ -116,6 +116,7 @@ header{
    width: 100%;
    height: 800px;
    filter: brightness(60%);
+   object-fit: cover;
 }
 
 .header-title{
@@ -334,10 +335,12 @@ main{
 .contact-form-row{
    display: flex;
    flex-wrap: wrap;
+   margin-bottom: 20px;
 }
 
 
 .contact-form-column{
+   position: relative;
    display: flex;
    flex-direction: column;
    margin-right: 46px;
@@ -345,23 +348,63 @@ main{
    width: 46%;
 }
 
-.contact-form label{
+
+.contact-form input {
+   width: 100%;
+   height: 100%;
+   color: #088A06;
+   padding: 20px 0px 6px 0px;
+   border: none;
+   font-size: 16px;
+   outline: none;
+}
+
+.contact-form label {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   pointer-events: none;
+}
+
+.contact-form label::after {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   border-bottom: 1px solid rgba(112, 128, 144, 0.671);
+   transition: all 0.25s ease;
+}
+
+.content-name {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   padding-bottom: 5px;
+   transition: all 0.25s ease;
    font-size: 14px;
    color: rgba(112, 128, 144, 0.671);
-   margin-bottom: 8px;
 }
 
-.contact-form input{
-   padding: 4px 0px; 
-   max-width: 500px;
-   outline: none;
-   border: none;
-   border-bottom: 1px solid rgba(112, 128, 144, 0.438);
-   color: #088A06;
-   font-size: 16px;
+
+.contact-form input:focus + .label-name .content-name,
+.contact-form input:valid + .label-name .content-name {
+   transform: translateY(-105%);
+   font-size: 13px;
+   left: 0px;
+   color: rgba(112, 128, 144, 0.671);
 }
 
-.contact-form textarea{
+.contact-form input:focus + .label-name::after,
+.contact-form input:valid + .label-name::after {
+   transform: translateX(0%);
+   border-bottom: 1px solid #088A06;
+}
+
+.contact-form textarea {
    resize: none;
    font-family: 'Poppins', sans-serif;
    font-size: 16px;
@@ -371,8 +414,12 @@ main{
    border: none;
    border-bottom: 1px solid #088A06;
    outline: none;
+   padding-top: 5px;
 }
 
+.contact-form textarea::placeholder{
+   color: rgba(112, 128, 144, 0.671);
+}
 .contact-form .button-green{
    margin: 0;
    margin-top: 14px;
@@ -694,6 +741,7 @@ footer h3{
       width: 70%;
    }
 
+
    footer{
       flex-direction: column;
       align-items: flex-start;
@@ -754,5 +802,13 @@ footer h3{
 @media (min-width: 1300px) and (max-width: 1555px){
    .contact-form-column{
       width: 60%;
+   }
+
+   
+}
+
+@media (max-width: 1555px){
+   .contact-form-row {
+      margin-bottom: 0px;
    }
 }
