@@ -142,7 +142,7 @@ main{
    flex-flow: wrap;
    justify-content: center;
    height: auto;
-   margin-bottom: 50px;
+   margin-bottom: 100px;
 }
 
 .albums-container > div{

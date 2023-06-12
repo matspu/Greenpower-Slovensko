@@ -110,6 +110,7 @@ header{
    text-align: center;
    color: white;
    margin-bottom: 100px;
+   text-align: center;
 }
 
 .header-img{
@@ -128,21 +129,23 @@ header{
    font-weight: bold;
 }
 
-.header-text1{
-   position: absolute;
-   top: 53%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-weight: normal;
-}
 
-.header-text2{
+
+.header-text{
    position: absolute;
    top: 56%;
    left: 50%;
    transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   gap: 4px;
+}
+
+.header-text h4{
    font-weight: normal;
 }
+
 
 .header-arrow{
    position: absolute;
@@ -165,7 +168,7 @@ main{
    display: flex;
    justify-content: space-around;
    align-items: center;
-   margin-bottom: 70px;
+   margin-bottom: 100px;
 }
 
 .about-section-text{
@@ -235,6 +238,7 @@ main{
 }
 
 .about-section-container img {
+   height: 400px;
    max-width: 100%;
    width: auto;
    margin: auto;
@@ -669,6 +673,7 @@ footer h3{
 
 
 
+
 @media (max-width: 600px) {
    main {
       width: 100%;
@@ -676,6 +681,10 @@ footer h3{
 
    .header-title{
       font-size: 64px;
+   }
+
+   .about-section{
+      width: 100%;
    }
 
    .video-section-overlay{
@@ -770,7 +779,7 @@ footer h3{
 
 
 
-@media(max-width: 1050px){
+@media(max-width: 1100px){
 
    .about-section{
       align-items: center;
@@ -795,6 +804,7 @@ footer h3{
 
    .about-section-container img{
       width: 100%;
+      height: auto;
    }
 
    .contact-form{
