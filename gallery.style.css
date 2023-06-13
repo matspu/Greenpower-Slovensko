@@ -118,6 +118,7 @@ header {
    transform: translate(-50%, -50%);
    font-size: 90px;
    font-weight: bold;
+   width: 100%;
 }
 
 main{
@@ -140,14 +141,17 @@ main{
 .albums-container {
    display: flex;
    flex-flow: wrap;
-   justify-content: center;
+   justify-content: space-around;
    height: auto;
    margin-bottom: 100px;
+   width: 100%;
 }
 
-.albums-container > div{
+.albums-container > .album{
    position: relative;
 }
+
+
 
 .albums-container p{
    position: absolute;
@@ -158,6 +162,8 @@ main{
    font-weight: 500;
    color: white;
    pointer-events: none;
+   width: 100%;
+   text-align: center;
 }
 
 .albums-container a{
@@ -167,8 +173,8 @@ main{
 }
 
 .albums-container img{
-   height: 400px;
-   width: 400px;
+   height: 350px;
+   width: 350px;
    cursor: pointer;
    border-radius: 8px;
    filter: brightness(50%);
