@@ -486,9 +486,9 @@ main{
 .sponsors-section{
    display: flex;
    justify-content: center;
-   height: 400px;
    margin-top: 200px;
    margin-bottom: 80px;
+   height: auto;
 }
 
 .sponsors-container{
@@ -498,14 +498,14 @@ main{
    gap: 50px;
 }
 
-.sponsors-row{
+.sponsors-column{
    display: flex;
-   justify-content: space-evenly;
-   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
    gap: 40px;
 }
 
-.sponsors-row img{
+.sponsors-column img{
    height: 60px;
    width: 240px;
    object-fit: contain;
@@ -693,10 +693,15 @@ footer h3{
       display: none;
    }
 
-
-
    .donation-section-text h2{
       font-size: 20px;
+   }
+
+}
+
+@media(max-width: 650px){
+   .sponsors-column {
+      justify-content: center;
    }
 }
 
@@ -737,6 +742,7 @@ footer h3{
       -webkit-clip-path: circle(1000px at 90% -10%);
       pointer-events: all;
    }
+
    
 
 
@@ -845,6 +851,7 @@ footer h3{
       object-position: 50% 70%;
       scale: 1;
    }
+}
 
 
 
