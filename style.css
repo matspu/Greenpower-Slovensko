@@ -13,6 +13,7 @@ html{
 }
 
 body{
+   height: 100vh;
    font-family: 'Poppins', sans-serif;
 }
 
@@ -97,8 +98,22 @@ nav a{
 }
 
 .nav-toggle{
+   position: fixed;
+   top: 0;
+   left: 0; 
+   background: #131418;
+   height: 100vh;
+   width: 100%;
+   flex-direction: column;
+   transition: all 1s ease;
    display: none;
 }
+
+.nav-toggle a{
+   display: block;
+}
+
+
 
 
 
@@ -674,7 +689,14 @@ footer h3{
 
 
 
+@media (300px <= width <= 600px){
+   .nav-logo{
+      width: 200px;
 
+   .header-title{
+      font-size: 54px;
+   }
+}
 
 
 @media (max-width: 600px) {
@@ -682,9 +704,7 @@ footer h3{
       width: 94%;
    }
 
-   .header-title{
-      font-size: 64px;
-   }
+
 
    .about-section{
       width: 100%;
@@ -721,27 +741,24 @@ footer h3{
       cursor: pointer;
       right: 3%;
       top: 50%;
-      transform: translate(-5%, -50%);
+      transform: translate(-3%, -50%);
       z-index: 2;
-   }
-
-   .nav-toggle {
-      display: block;
-      position: fixed;
-      background: #131418;
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(50px at 90% -20%);
-      -webkit-clip-path: circle(50px at 90% -10%);
-      transition: all 1s ease-out;
-      pointer-events: none;
    }
    
    .nav-toggle.open {
-      clip-path: circle(1000px at 90% -10%);
-      -webkit-clip-path: circle(1000px at 90% -10%);
-      pointer-events: all;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+   }
+
+   .nav-toggle > div{
+      text-align: center;
+      height: 60px;
+   }
+
+   .nav-toggle .nav-button{
+      display: block;
    }
 
    
