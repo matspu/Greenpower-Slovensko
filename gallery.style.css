@@ -142,10 +142,11 @@ main{
 .albums-container {
    display: flex;
    flex-flow: wrap;
-   justify-content: space-around;
+   justify-content: space-evenly;
    height: auto;
    margin-bottom: 100px;
-   width: 100%;
+   width: auto;
+   gap: 20px;
 }
 
 .albums-container > .album{
@@ -317,6 +318,15 @@ footer h3 {
    width: 45%;
    padding: 20px 0px;
 }
+
+@media (300px <= width <= 500px) {
+   .albums-container img {
+      height: 250px;
+      width: 250px;
+   }
+}
+
+
 
 
 @media (max-width: 780px) {

@@ -149,7 +149,7 @@ header{
 
 .header-text{
    position: absolute;
-   top: 56%;
+   top: 57%;
    left: 50%;
    transform: translate(-50%, -50%);
    display: flex;
@@ -692,9 +692,18 @@ footer h3{
 @media (300px <= width <= 600px){
    .nav-logo{
       width: 200px;
+   }
 
    .header-title{
-      font-size: 54px;
+      font-size: 44px;
+   }
+
+   #contact-section{
+      box-shadow: none;
+   }
+
+   .contact-form{
+      margin-inline: 20px;
    }
 }
 
@@ -703,8 +712,6 @@ footer h3{
    main {
       width: 94%;
    }
-
-
 
    .about-section{
       width: 100%;
@@ -775,6 +782,8 @@ footer h3{
 @media(max-width: 920px){
    #contact-section {
       flex-direction: column;
+      padding-inline: 0px;
+      padding-top: 0px;
    }
 
    .contact-information{
