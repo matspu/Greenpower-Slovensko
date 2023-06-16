@@ -116,7 +116,6 @@ nav a{
 
 
 
-
 header{
    position: relative;
    display: flex;
@@ -139,7 +138,7 @@ header{
    flex-direction: column;
    align-items: center;
    position: absolute;
-   top: 50%;
+   top: 45%;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 100%;
@@ -704,6 +703,10 @@ footer h3{
    .about-section {
       width: 100%;
    }
+
+   .about-section-container{
+      width: 94%;
+   }
    
    .video-section-overlay {
       display: none;
@@ -831,6 +834,12 @@ footer h3{
    }
 }
 
+@media (600px <= width <= 1100px){
+   .about-section-container{
+      width: 80%;
+   }
+}
+
 
 @media(max-width: 1100px){
 
@@ -839,7 +848,6 @@ footer h3{
    }
 
    .about-section-container{
-      width: 80%;
       flex-wrap: wrap;
    }
 
@@ -849,6 +857,11 @@ footer h3{
 
    .about-section-title{
       font-size: 30px;
+      margin-bottom: 4px;
+   }
+
+   .about-section img{
+      margin-bottom: 20px;
    }
 
    .about-section-text{
