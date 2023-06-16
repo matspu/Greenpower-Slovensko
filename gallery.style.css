@@ -348,7 +348,7 @@ footer h3 {
    }
 
    main {
-      width: 94%;
+      width: 100%;
    }
 
    .album-title{
@@ -359,6 +359,10 @@ footer h3 {
 
    .image-overflow{
       width: 90%;
+   }
+
+   .image-overflow img{
+      width: 100%;
    }
 
 
@@ -420,6 +424,10 @@ footer h3 {
    .footer-address {
       display: flex;
       flex-direction: column;
+   }
+
+   .footer-credits{
+      height: auto;
    }
    
    footer > div {
