@@ -57,7 +57,7 @@ nav a{
 .nav-button {
    height: 40px;
    width: 120px;
-   border-radius: 10px;
+   border-radius: 8px;
    background-color: #11950F;
    color: white;
    border: none;
@@ -135,23 +135,23 @@ header{
    object-fit: cover;
 }
 
-.header-title{
+.header-text-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    position: absolute;
    top: 45%;
    left: 50%;
    transform: translate(-50%, -50%);
-   font-size: 90px;
-   font-weight: bold;
    width: 100%;
 }
 
-
+.header-title{
+   font-size: 90px;
+   font-weight: bold;
+}
 
 .header-text{
-   position: absolute;
-   top: 57%;
-   left: 50%;
-   transform: translate(-50%, -50%);
    display: flex;
    flex-direction: column;
    width: 80%;
@@ -215,7 +215,7 @@ main{
 .button {
    height: 40px;
    width: 120px;
-   border-radius: 6px;
+   border-radius: 8px;
    background-color: transparent;
    border: 1px solid #088A06;
    color: #088A06;
@@ -226,7 +226,7 @@ main{
 .button-green {
    height: 40px;
    width: 120px;
-   border-radius: 6px;
+   border-radius: 8px;
    background-color: #088A06;
    color: white;
    margin-left: 0px;
@@ -474,7 +474,7 @@ main{
 .donation-section-button{
    height: 40px;
    width: 120px;
-   border-radius: 10px;
+   border-radius: 8px;
    background-color: white;
    color: #088A06;
    border: none;
@@ -611,7 +611,7 @@ footer h3{
    background-color: white;
    border: none;
    color: #4267B2;
-   border-radius: 6px;
+   border-radius: 8px;
    cursor: pointer;
    width: 200px;
 }
@@ -620,7 +620,7 @@ footer h3{
    background-color: white;
    border: none;
    color: #B41B84;
-   border-radius: 6px;
+   border-radius: 8px;
    cursor: pointer;
    width: 200px;
 }
@@ -698,34 +698,32 @@ footer h3{
       font-size: 44px;
    }
 
-   #contact-section{
-      box-shadow: none;
+   main {
+      width: 94%;
+   }
+   
+   .about-section {
+      width: 100%;
+   }
+   
+   .video-section-overlay {
+      display: none;
+   }
+   
+   .donation-section-text h2 {
+      font-size: 20px;
    }
 
-   .contact-form{
+   #contact-section {
+      box-shadow: none;
+   }
+      
+   .contact-form {
       margin-inline: 20px;
    }
 }
 
 
-@media (max-width: 600px) {
-   main {
-      width: 94%;
-   }
-
-   .about-section{
-      width: 100%;
-   }
-
-   .video-section-overlay{
-      display: none;
-   }
-
-   .donation-section-text h2{
-      font-size: 20px;
-   }
-
-}
 
 @media(max-width: 650px){
    .sponsors-column {

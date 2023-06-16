@@ -51,7 +51,7 @@ nav a {
 .nav-button {
    height: 40px;
    width: 120px;
-   border-radius: 10px;
+   border-radius: 8px;
    background-color: #11950F;
    color: white;
    border: none;
@@ -92,7 +92,19 @@ nav a {
 }
 
 .nav-toggle {
+   position: fixed;
+   top: 0;
+   left: 0;
+   background: #131418;
+   height: 100vh;
+   width: 100%;
+   flex-direction: column;
+   transition: all 1s ease;
    display: none;
+}
+
+.nav-toggle a {
+   display: block;
 }
 
 header {
@@ -319,13 +331,39 @@ footer h3 {
    padding: 20px 0px;
 }
 
-@media (300px <= width <= 500px) {
+@media (max-width: 500px){
    .albums-container img {
       height: 250px;
       width: 250px;
    }
 }
 
+@media (300px <= width <= 600px) {
+   .nav-logo {
+      width: 200px;
+   }
+
+   .header-title {
+      font-size: 44px;
+   }
+
+   main {
+      width: 94%;
+   }
+
+   .album-title{
+      font-size: 44px;
+   }
+
+
+
+   .image-overflow{
+      width: 90%;
+   }
+
+
+
+}
 
 
 
@@ -333,38 +371,41 @@ footer h3 {
    nav a {
       display: none;
    }
-
+   
    nav button {
       display: none;
    }
-
+   
    .nav-hamburger {
       display: block;
       position: absolute;
       cursor: pointer;
       right: 3%;
       top: 50%;
-      transform: translate(-5%, -50%);
+      transform: translate(-3%, -50%);
       z-index: 2;
    }
-
-   .nav-toggle {
-      display: block;
-      position: fixed;
-      background: #131418;
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(50px at 90% -20%);
-      -webkit-clip-path: circle(50px at 90% -10%);
-      transition: all 1s ease-out;
-      pointer-events: none;
-   }
-
+   
    .nav-toggle.open {
-      clip-path: circle(1000px at 90% -10%);
-      -webkit-clip-path: circle(1000px at 90% -10%);
-      pointer-events: all;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+   }
+   
+   .nav-toggle>div {
+      text-align: center;
+      height: 60px;
+   }
+   
+   .nav-toggle .nav-button {
+      display: block;
+   }
+}
+
+@media(max-width: 860px) {
+   nav {
+      padding-inline: 10px;
    }
 }
 
