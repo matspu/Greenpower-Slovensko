@@ -125,7 +125,6 @@ header{
    text-align: center;
    color: white;
    margin-bottom: 100px;
-   text-align: center;
 }
 
 .header-img{
@@ -140,7 +139,7 @@ header{
    flex-direction: column;
    align-items: center;
    position: absolute;
-   top: 45%;
+   top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 100%;
@@ -717,11 +716,14 @@ footer h3{
    #contact-section {
       box-shadow: none;
    }
-      
-   .contact-form {
+
+   .contact-form{
       margin-inline: 20px;
    }
+      
 }
+
+
 
 
 
@@ -789,12 +791,13 @@ footer h3{
    }
 
    .contact-form{
-      margin-right: 40px;
       width: auto;
+      margin: 0;
    }
 
    .contact-form-column {
-      width: 80%;
+      width: 100%;
+      margin-right: 0px;
    }
 
 
@@ -815,7 +818,18 @@ footer h3{
 
 }
 
+@media(600px <= width <= 920px){
+   .contact-form {
+      padding-inline: 80px;
+   }
+}
 
+
+@media (920px <= width <= 1000px){
+   .contact-form{
+      padding-inline: 0px;
+   }
+}
 
 
 @media(max-width: 1100px){
@@ -845,11 +859,6 @@ footer h3{
       width: 100%;
       height: auto;
    }
-
-   .contact-form{
-      padding-inline: 0px;
-   }
-
 
 }
 
@@ -895,7 +904,7 @@ footer h3{
 
 @media (min-width: 1300px) and (max-width: 1555px){
    .contact-form-column{
-      width: 60%;
+      width: 70%;
    }
 
    
