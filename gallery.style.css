@@ -56,6 +56,12 @@ nav a {
    color: white;
    border: none;
    margin-left: 30px;
+   transition: all 0.2s ease;
+}
+
+.nav-button:hover{
+   background-color: #0da10b;
+   transform: scale(104%);
 }
 
 .nav-button a {
@@ -193,6 +199,7 @@ main{
    cursor: pointer;
    border-radius: 8px;
    filter: brightness(50%);
+   object-fit: cover;
    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
